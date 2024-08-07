@@ -34,7 +34,8 @@
 .keys {
   position: absolute;
   bottom: 0;
-  color:  #242424;
+  display: flex;
+  justify-content: center;
 }
 
 .result-container{

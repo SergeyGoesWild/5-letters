@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Cell from "./components/Cell";
-import Keyboard from "react-simple-keyboard";
+import Keys from "./components/Keys.jsx";
 import "react-simple-keyboard/build/css/index.css";
 import generateWord from "./assets/generateWord.js";
 import listOfWords from "./assets/listOfWords.js";
@@ -29,7 +29,7 @@ function App() {
 
   const onKeyPress = (button) => {
     if (!gameOver) {
-      console.log("KEEEEEEEEEEEEEEY");
+      console.log("KEEEEEEEEEEEEEEY ->>>", button);
       const objToAdd = {
         id: currentIndex,
         content: button,
@@ -118,11 +118,12 @@ function App() {
       </div>
 
       <div className="keys">
-        <Keyboard
+        <Keys onKeyPress={onKeyPress} />
+        {/* <Keyboard
           onChange={onChange}
           onKeyPress={onKeyPress}
           layout={keyboardLayouts}
-        />
+        /> */}
       </div>
     </div>
   );

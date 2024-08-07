@@ -1,0 +1,12 @@
+.line-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 0;
+}
+
+.keys-background {
+    width: 70%;
+    background-color: rgb(188, 194, 200);
+    border-radius: 8px;
+    padding: 0.5vh 0.5vh;
+}
