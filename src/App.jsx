@@ -95,7 +95,14 @@ function App() {
     <div className="container-main">
       <div className="container-vertical">
         {mainWord.map((char, indexRow) => (
-          <div className="container-horizontal" key={indexRow}>
+          <div
+            className={
+              currentRow === indexRow
+                ? "container-horizontal-active"
+                : "container-horizontal"
+            }
+            key={indexRow}
+          >
             {mainWord.map((char, index) => (
               <Cell
                 item={guessingWords[indexRow][index]}
