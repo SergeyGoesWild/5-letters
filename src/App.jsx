@@ -14,6 +14,7 @@ function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [gameOver, setGameOver] = useState(false);
   const [hasWon, setHasWon] = useState(false);
+  const [indicatorIndex, setIndicatorIndex] = useState(0);
 
   useEffect(() => {
     console.log("WORD TO GUESS ---> ", mainWord);
@@ -75,7 +76,6 @@ function App() {
     } else {
       console.log("game over");
       setGameOver(true);
-      setCurrentRow(6);
     }
   };
 
@@ -96,24 +96,32 @@ function App() {
       <div
         className={gameOver ? "container-vertical-go" : "container-vertical"}
       >
-        {mainWord.map((char, indexRow) => (
-          <div
-            className={
-              currentRow === indexRow
-                ? "container-horizontal-active"
-                : "container-horizontal"
-            }
-            key={indexRow}
-          >
-            {mainWord.map((char, index) => (
-              <Cell
-                item={guessingWords[indexRow][index]}
-                showRes={showRes[indexRow]}
-                key={index}
-              />
+        <div className="hor">
+          <div className="indicator">
+            <div
+              style={{
+                top: `calc(6% + 20% * ${currentRow})`,
+                position: "absolute",
+                transition: "top 0.5s, height 0.5s",
+              }}
+            >
+              👉
+            </div>
+          </div>
+          <div className="vert">
+            {mainWord.map((char, indexRow) => (
+              <div className="container-horizontal" key={indexRow}>
+                {mainWord.map((char, index) => (
+                  <Cell
+                    item={guessingWords[indexRow][index]}
+                    showRes={showRes[indexRow]}
+                    key={index}
+                  />
+                ))}
+              </div>
             ))}
           </div>
-        ))}
+        </div>
         <div className="result-container">
           {gameOver && (
             <>
@@ -127,7 +135,7 @@ function App() {
       </div>
 
       <div className="keys">
-        <Keys onKeyPress={onKeyPress} />
+        <Keys onKeyPress={onKeyPress} gameOver={gameOver} />
       </div>
     </div>
   );

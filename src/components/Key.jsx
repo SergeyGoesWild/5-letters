@@ -1,7 +1,7 @@
 import "../styles/Key.styles.css";
 import { useState } from "react";
 
-function Key({ letter, onKeyPress }) {
+function Key({ letter, onKeyPress, gameOver }) {
   const [isPressed, setIsPressed] = useState(false);
 
   const handleMouseDown = () => {
@@ -14,7 +14,7 @@ function Key({ letter, onKeyPress }) {
 
   return (
     <div
-      className={isPressed ? "key-pressed" : "key"}
+      className={gameOver ? "key-inactive" : isPressed ? "key-pressed" : "key"}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onClick={() => onKeyPress(letter)}

@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../styles/Keys.styles.css";
 import Key from "./Key.jsx";
 
-function Keys({ onKeyPress }) {
+function Keys({ onKeyPress, gameOver }) {
   const [firstLine, setFirstLine] = useState([
     "q",
     "w",
@@ -40,17 +40,32 @@ function Keys({ onKeyPress }) {
     <div className="keys-background">
       <div className="line-container">
         {firstLine.map((elem, key) => (
-          <Key key={key} letter={elem} onKeyPress={onKeyPress} />
+          <Key
+            key={key}
+            letter={elem}
+            onKeyPress={onKeyPress}
+            gameOver={gameOver}
+          />
         ))}
       </div>
       <div className="line-container">
         {secondLine.map((elem, key) => (
-          <Key key={key} letter={elem} onKeyPress={onKeyPress} />
+          <Key
+            key={key}
+            letter={elem}
+            onKeyPress={onKeyPress}
+            gameOver={gameOver}
+          />
         ))}
       </div>
       <div className="line-container">
         {thirdLine.map((elem, key) => (
-          <Key key={key} letter={elem} onKeyPress={onKeyPress} />
+          <Key
+            key={key}
+            letter={elem}
+            onKeyPress={onKeyPress}
+            gameOver={gameOver}
+          />
         ))}
       </div>
     </div>
