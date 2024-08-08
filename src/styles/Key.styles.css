@@ -1,13 +1,11 @@
-.key {
-    width: 50px;
-    height: 50px;
+.key, .key-pressed {
+    width: 100%;
     background-color: rgb(210, 218, 224);
-    /* border: 1px solid rgb(255, 255, 255); */
     border-radius: 8px;
     align-content: center;
     text-align: center;
     color: rgba(26, 26, 26, 0.87);
-    margin: 0 0.5vw;
+    margin: 1% 1%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     user-select: none;
     -webkit-user-select: none;
@@ -17,21 +15,8 @@
 }
 
 .key-pressed {
-    width: 50px;
-    height: 50px;
     background-color: rgb(234, 239, 242);
-    /* border: 1px solid rgb(255, 255, 255); */
-    border-radius: 8px;
-    align-content: center;
-    text-align: center;
-    color: rgba(26, 26, 26, 0.87);
-    margin: 0 0.5vw;
     box-shadow: rgba(0, 0, 0, 0.0) 0px 1px 2px 0px;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    transition: all 0.3s ease;
 }
 
 .key:hover {
