@@ -93,7 +93,9 @@ function App() {
 
   return (
     <div className="container-main">
-      <div className="container-vertical">
+      <div
+        className={gameOver ? "container-vertical-go" : "container-vertical"}
+      >
         {mainWord.map((char, indexRow) => (
           <div
             className={

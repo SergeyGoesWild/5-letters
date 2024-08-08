@@ -7,14 +7,19 @@
   position: relative;
 }
 
-.container-vertical {
+.container-vertical, .container-vertical-go {
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
+  transition: all 0.3s ease;
 }
 
+.container-vertical-go {
+  padding-bottom: 22vh;
+  transition: all 0.3s ease;
+}
 .container-horizontal {
   display: flex;
   justify-content: center;
