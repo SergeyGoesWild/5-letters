@@ -128,11 +128,6 @@ function App() {
 
       <div className="keys">
         <Keys onKeyPress={onKeyPress} />
-        {/* <Keyboard
-          onChange={onChange}
-          onKeyPress={onKeyPress}
-          layout={keyboardLayouts}
-        /> */}
       </div>
     </div>
   );
