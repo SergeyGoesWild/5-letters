@@ -100,7 +100,7 @@ function App() {
           <div className="container-indicator">
             <div
               style={{
-                top: `calc(1.8% + 20.5% * ${currentRow})`,
+                top: `calc(1.8% + 21.5% * ${currentRow})`,
                 position: "absolute",
                 transition: "top 0.5s, height 0.5s",
               }}

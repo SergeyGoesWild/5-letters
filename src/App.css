@@ -89,7 +89,33 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 41vh;
-  width: 20vw;
+  height: 50vh;
+  width: 41vh;
   /* background-color: aquamarine; */
+}
+
+@media screen and (max-width: 375px) {
+  .keys {
+    width: 100%;
+    height: 30%;
+  }
+  .cell-column {
+    height: 43vh;
+    width: 35vh;
+  }
+  .container-indicator {
+    width: 10vw;
+    font-size: 6vw;
+    justify-content: left;
+  }
+  .container-cells-indicator{
+    margin-right: 4vw;
+  }
+  .container-vertical, .container-vertical-go {
+    padding-bottom: 16vh;
+  }
+  
+  .container-vertical-go {
+    padding-bottom: 27vh;
+  }
 }

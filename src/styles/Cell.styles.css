@@ -20,3 +20,10 @@
     background-color: rgb(115, 201, 125);
     border: 1px solid rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 375px) {
+    .cell, .cell-guessed-let, .cell-guessed-pos {
+        width: 6vh;
+        height: 6vh;
+    }
+  }
