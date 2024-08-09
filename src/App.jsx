@@ -92,15 +92,15 @@ function App() {
   };
 
   return (
-    <div className="container-main">
+    <div className="container-global">
       <div
         className={gameOver ? "container-vertical-go" : "container-vertical"}
       >
-        <div className="hor">
-          <div className="indicator">
+        <div className="container-cells-indicator">
+          <div className="container-indicator">
             <div
               style={{
-                top: `calc(6% + 20% * ${currentRow})`,
+                top: `calc(1.8% + 20.5% * ${currentRow})`,
                 position: "absolute",
                 transition: "top 0.5s, height 0.5s",
               }}
@@ -108,9 +108,9 @@ function App() {
               👉
             </div>
           </div>
-          <div className="vert">
+          <div className="cell-column">
             {mainWord.map((char, indexRow) => (
-              <div className="container-horizontal" key={indexRow}>
+              <div className="cell-row" key={indexRow}>
                 {mainWord.map((char, index) => (
                   <Cell
                     item={guessingWords[indexRow][index]}
