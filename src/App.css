@@ -119,3 +119,159 @@
     padding-bottom: 27vh;
   }
 }
+
+@media screen and (min-width: 376px) and (max-width: 480px) {
+  .keys {
+    width: 100%;
+    height: 28%;
+  }
+  .cell-column {
+    height: 47vh;
+    width: 35vh;
+  }
+  .container-indicator {
+    width: 10vw;
+    font-size: 6vw;
+    justify-content: left;
+  }
+  .container-cells-indicator{
+    margin-right: 4vw;
+  }
+  .container-vertical, .container-vertical-go {
+    padding-bottom: 16vh;
+  }
+  
+  .container-vertical-go {
+    padding-bottom: 27vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+  .keys {
+    width: 70%;
+    height: 28%;
+  }
+  .cell-column {
+    height: 42vh;
+    width: 35vh;
+  }
+  .container-indicator {
+    width: 10vw;
+    font-size: 4vw;
+    justify-content: center;
+  }
+  .container-cells-indicator{
+    margin-right: 10vw;
+  }
+  .container-vertical {
+    padding-bottom: 12vh;
+  }
+  .container-vertical-go {
+    padding-bottom: 26vh;
+  }
+  .restart-button {
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    padding: 15px 30px;
+    border-radius: 35px;
+    margin-top: 10px;
+  }
+
+  .result-container{
+    padding-top: 20px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .keys {
+    width: 45%;
+    height: 28%;
+  }
+  .cell-column {
+    height: 47vh;
+    width: 38vh;
+  }
+  .container-indicator {
+    width: 5vw;
+    font-size: 2.5vw;
+    justify-content: left;
+  }
+  .container-cells-indicator{
+    margin-right: 5vw;
+  }
+  .container-vertical, .container-vertical-go {
+    padding-bottom: 13vh;
+  }
+  
+  .container-vertical-go {
+    padding-bottom: 25vh;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1600px) {
+  .keys {
+    width: 34%;
+    height: 28%;
+  }
+  .cell-column {
+    height: 47vh;
+    width: 38vh;
+  }
+  .container-indicator {
+    width: 5vw;
+    font-size: 1.8vw;
+    justify-content: center;
+  }
+  .container-cells-indicator{
+    margin-right: 5vw;
+  }
+  .container-vertical, .container-vertical-go {
+    padding-bottom: 13vh;
+  }
+  
+  .container-vertical-go {
+    padding-bottom: 25vh;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .keys {
+    width: 30%;
+    height: 28%;
+  }
+  .cell-column {
+    height: 47vh;
+    width: 40vh;
+  }
+  .container-indicator {
+    width: 5vw;
+    font-size: 2vw;
+    justify-content: center;
+  }
+  .container-cells-indicator{
+    margin-right: 5vw;
+  }
+  .container-vertical, .container-vertical-go {
+    padding-bottom: 13vh;
+  }
+  
+  .container-vertical-go {
+    padding-bottom: 26vh;
+  }
+
+  .restart-button {
+    font-size: 20px;
+    height: 60px;
+    width: 140px;
+    padding: 15px 30px;
+    border-radius: 35px;
+    margin-top: 10px;
+  }
+
+  .result-container{
+    padding-top: 20px;
+    font-size: 24px;
+  }
+}

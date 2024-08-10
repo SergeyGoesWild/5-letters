@@ -17,6 +17,8 @@ function Key({ letter, onKeyPress, gameOver }) {
       className={gameOver ? "key-inactive" : isPressed ? "key-pressed" : "key"}
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
+      onTouchStart={handleMouseDown}
+      onTouchEnd={handleMouseUp}
       onClick={() => onKeyPress(letter)}
     >
       {letter}

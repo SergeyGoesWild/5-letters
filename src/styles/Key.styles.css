@@ -22,3 +22,9 @@
 .key:hover {
     cursor: pointer;
 }
+
+@media screen and (min-width: 1900px) {
+    .key, .key-pressed, .key-inactive {
+        font-size: 1.4rem;
+    }
+  }
