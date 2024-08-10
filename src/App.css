@@ -24,7 +24,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  /* padding: 0.5vw 0; */
   border-radius: 12px;
 }
 
@@ -35,6 +34,7 @@
   justify-content: center;
   width: 30%;
   height: 25%;
+  min-width: 320px;
 }
 
 .result-container{
@@ -67,31 +67,29 @@
 }
 
 .container-indicator {
-  width: 4vw;
-  text-align: center;
+  width: 50px;
+  text-align: left;
   height: 100%;
   position: relative;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  font-size: 2vw;
-  /* background-color: aqua; */
+  justify-content: left;
+  font-size: 30px;
 }
 
 .container-cells-indicator {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-right: 4vw;
+  margin-right: 50px;
 }
 
 .cell-column {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 50vh;
   width: 41vh;
-  /* background-color: aquamarine; */
 }
 
 @media screen and (max-width: 375px) {
@@ -104,9 +102,7 @@
     width: 35vh;
   }
   .container-indicator {
-    width: 10vw;
-    font-size: 6vw;
-    justify-content: left;
+    text-align: center;
   }
   .container-cells-indicator{
     margin-right: 4vw;
@@ -114,7 +110,6 @@
   .container-vertical, .container-vertical-go {
     padding-bottom: 16vh;
   }
-  
   .container-vertical-go {
     padding-bottom: 27vh;
   }
@@ -129,11 +124,7 @@
     height: 47vh;
     width: 35vh;
   }
-  .container-indicator {
-    width: 10vw;
-    font-size: 6vw;
-    justify-content: left;
-  }
+
   .container-cells-indicator{
     margin-right: 4vw;
   }
@@ -146,7 +137,7 @@
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 1200px) and (orientation: portrait) {
+@media screen and (min-width: 600px) and (max-width: 1000px) and (orientation: portrait) {
   .keys {
     width: 70%;
     height: 28%;
@@ -155,11 +146,9 @@
     height: 42vh;
     width: 35vh;
   }
-  .container-indicator {
-    width: 10vw;
-    font-size: 4vw;
-    justify-content: center;
-  }
+  /* .container-indicator {
+    text-align: center;
+  } */
   .container-cells-indicator{
     margin-right: 10vw;
   }
@@ -183,14 +172,14 @@
     font-size: 25px;
   }
 }
-
+ 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .keys {
     width: 45%;
     height: 28%;
   }
   .cell-column {
-    height: 47vh;
+    height: 49vh;
     width: 38vh;
   }
   .container-indicator {
@@ -206,7 +195,7 @@
   }
   
   .container-vertical-go {
-    padding-bottom: 25vh;
+    padding-bottom: 26vh;
   }
 }
 
@@ -216,23 +205,18 @@
     height: 28%;
   }
   .cell-column {
-    height: 47vh;
+    height: 49vh;
     width: 38vh;
   }
   .container-indicator {
-    width: 5vw;
-    font-size: 1.8vw;
-    justify-content: center;
-  }
-  .container-cells-indicator{
-    margin-right: 5vw;
+    font-size: 2vw;
+    text-align: left;
   }
   .container-vertical, .container-vertical-go {
     padding-bottom: 13vh;
   }
-  
   .container-vertical-go {
-    padding-bottom: 25vh;
+    padding-bottom: 26vh;
   }
 }
 
@@ -246,19 +230,19 @@
     width: 40vh;
   }
   .container-indicator {
-    width: 5vw;
+    width: 60px;
     font-size: 2vw;
-    justify-content: center;
+    justify-content: left;
   }
-  .container-cells-indicator{
+  /* .container-cells-indicator{
     margin-right: 5vw;
-  }
+  } */
   .container-vertical, .container-vertical-go {
     padding-bottom: 13vh;
   }
   
   .container-vertical-go {
-    padding-bottom: 26vh;
+    padding-bottom: 28vh;
   }
 
   .restart-button {
@@ -274,4 +258,4 @@
     padding-top: 20px;
     font-size: 24px;
   }
-}
+} 
